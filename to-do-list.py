@@ -6,13 +6,12 @@ run_button = True
 run2_botton =True
 def add_task():
         global get_task
-        global tasks
         get_task = input("Add your task:")
         tasks.append(get_task)
         return tasks  
 while True:
-     add_task()
-     for i in tasks:
+     retrned_task = add_task()
+     for i in retrned_task:
           print(i)
      if get_task == "":
           tasks.pop(-1)
